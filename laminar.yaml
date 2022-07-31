@@ -1,7 +1,13 @@
 updates:
   - pattern: "regex:v(\d+\.)(\d+\.)(\d+)"
-    files: "prod.yaml"
+    files:
+      - "prod.yaml"
   - pattern: "regex:rc-v(\d+\.)(\d+\.)(\d+)"
-    files: "preprod.yaml"
+    files:
+      - "preprod.yaml"
   - pattern: "regex:feature/.*"
-    files: "staging.yaml"
+    files:
+      "staging.yaml"
+  - pattern: "glob:migration-*"
+    files:
+      - "migration.yaml"
