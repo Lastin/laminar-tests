@@ -7,7 +7,7 @@ updates:
       - "preprod.yaml"
   - pattern: "regex:feature/.*"
     files:
-      "staging.yaml"
+      - "staging.yaml"
   - pattern: "glob:migration-*"
     files:
       - "migration.yaml"
